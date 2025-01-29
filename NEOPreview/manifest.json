@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "NEO PREVIEW",
+  "version": "1.0",
+  "description": "Captura y muestra imágenes de 4 pestañas alternadas cada 1 minuto.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "image/icon1.ico",
+      "48": "image/icon2.png",
+      "128": "image/icon3.png"
+    }
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "downloads"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
